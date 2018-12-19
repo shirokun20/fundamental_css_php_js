@@ -1,0 +1,844 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-69417218-24"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-69417218-24');
+  </script>
+  <title>Pendaftaran Driver Go-Ride</title>
+  
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"9edb876136","applicationID":"180493906","transactionName":"c15cF0dbVQ8DFxlQQkAeVQxHXV0GSRMHHl5VUFYQGlpcFA==","queueTime":0,"applicationTime":29,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+
+  <link rel="apple-touch-icon" type="image/png" href="https://daftar.go-ride.co.id/assets/go_ride/apple-touch-icon-fdcb362172968f4d5c5193e93e26fe5c87fdc122ad8a8e614525bb652eeea071.png" />
+  <link rel="shortcut icon" type="image/png" href="https://daftar.go-ride.co.id/assets/go_ride/id/favicon-5d93d01632f9c38d09ea6947e1163ffee1b8c6786287286ff9468c0d7b5fdbf4.png" />
+
+  <link rel="stylesheet" media="all" href="https://daftar.go-ride.co.id/assets/application-6db2594863f54ad4f14ad6388d3e51b0814f4cd17d781cec42d428fce7848203.css" data-turbolinks-track="true" />
+  <link rel="stylesheet" media="all" href="https://daftar.go-ride.co.id/assets/build/goride/id/main-325284a7acdd901104ab28103e0c6bb766aa73f1838733200c5b99e29fff3a08.css" data-turbolinks-track="true" />
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="+XWaFUco2nwOO1cuq1UkgUPviyx4kvR+8004XGnSfW412CULo1s0bd9BxvCrE+Fmiz054bwxhNs+CWf/iJbVWQ==" />
+
+</head>
+
+<body>
+  <noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TL4R5QR"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="no-script">
+  <p>Mohon maaf, website kami membutuhkan JavaScript. Jadi, aktifkan JavaScript dan muat ulang halaman.</p>
+</div>
+
+  </noscript>
+
+<div id="wrapper" class="wrapper">
+  <header>
+  <nav class="navbar">
+  <div class="container">
+    <div class="gojek-wrapper">
+      <div class="pure-g">
+        <div class="pure-u-2-24 vertical-center">
+          <div class="brand">
+            <a href="https://www.go-jek.com/go-ride/">
+              <img src="https://daftar.go-ride.co.id/assets/go_ride/goride_logo-c7cf36e30c689abea2d9409c298262c82595e7ce07aa3790dab1db813ba67263.svg" class="navbar-brand" alt="GO-RIDE">
+            </a>
+          </div>
+        </div>
+        <div class="pure-u-12-24">
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="https://www.go-jek.com/about" >Tentang Kami</a>
+              </li>
+              <li>
+                <a id="productButton" href="javascript:void(0)">Layanan</a>
+              </li>
+              <li>
+                <a href="https://www.go-jek.com/blog" >Blog</a>
+              </li>
+              <li>
+                <a href="https://www.go-jek.com/faq">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pure-u-10-24">
+          <div class="button-wrapper">
+            <a id="joinButton" href="javascript:void(0)" class="btn btn-style-1">
+              <span>Gabung</span>
+            </a>
+
+            <div class="btn-style-1-icon" style="height: 34px;">
+              <img src="https://bilba.go-jek.com/dist/img/card/navigation/profile.png" style="max-width: 15px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="hamburger-mobile" id="newHam">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="overlay-menu-mobile" id="overlayMenuMobile">
+  <div class="content-menu">
+    <div class="header-menu">
+      <div class="navbar-brand-menu">
+        <img src="https://bilba.go-jek.com/dist/img/gojek-white.png">
+      </div>
+      <div class="menu-list" id="main-menu-list">
+        <ul>
+          <li class="active">
+              <a href="https://www.go-jek.com/">Beranda</a>
+          </li>
+          <li>
+              <a href="https://www.go-jek.com/about">Tentang</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" id="hamburgerMenu_Layanan_new">Layanan <i id="arrow-service" class="fa fa-chevron-right"></i></a>
+          </li>
+          <li>
+              <a href="https://www.go-jek.com/blog">Blog</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" id="hamburgerMenu_Gabung_new">Gabung <i id="arrow-join" class="fa fa-chevron-right"></i></a>
+          </li>
+          <li>
+              <a href="https://www.go-jek.com/career">Karir</a>
+          </li>
+          <li>
+              <a href="https://www.go-jek.com/faq">FAQ</a>
+          </li>
+          <li>
+              <a href="https://www.go-jek.com/contact">Hubungi Kami</a>
+          </li>
+        </ul>
+        <hr>
+          <div class="table-display download-app">
+            <div class="middle-table">
+              <div class="logo">
+                <div class="table-display">
+                  <div class="middle-table">
+                    <img src="https://bilba.go-jek.com/dist/img/driver-white.png">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="middle-table">
+              <a href="https://gojek.onelink.me/2351932542?pid=Go-Jek_Web&c=JEK_General_Link_19-05-17&af_dp=gojek%3A%2F%2Fhome?source=Go-Jek_Web&campaign=JEK&set=JEK_General_Link_19-05-17&group=JEK_General_Link_19-05-17&af_web_dp=http%3A%2F%2Fwww.go-jek.com?utm_source=Website&utm_campaign=JEK_General_Link_19-05-17&utm_medium=cpm&af_force_dp=true&is_retargeting=true">
+                UNDUH APLIKASI KAMI
+              </a>
+            </div>
+          </div>
+        <hr>
+        <div class="social-media">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/gojekindonesia">
+                <i class="fa fa-facebook fa-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/gojekindonesia?lang=id">
+                <i class="fa fa-twitter fa-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/gojekindonesia/">
+                <i class="fa fa-instagram fa-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCmlKSK0OKn_B3oPwElW4n5w">
+                <i class="fa fa-youtube-play fa-lg"></i>
+              </a>
+            </li>
+          </ul>
+
+          <h5 style="font-weight: 500;">© 2017 Aplikasi Karya Anak Bangsa</h5>
+        </div>
+      </div>
+      <div class="hamburger accordion service" id="sub-layanan-menu">
+        <span class="service_group back-menu"><i class="fa fa-chevron-left"></i> Kembali</span>
+
+        <span class="service_group" data-group="GO-JEK">GO-JEK <i id="arrow-group" class="fa fa-chevron-right" data-group="GO-JEK"></i></span>
+        <ul class="service_name" data-services="GO-JEK">
+          <li><a href="https://www.go-jek.com/go-ride/">GO-RIDE</a></li>
+          <li><a href="https://www.go-jek.com/go-car/">GO-CAR</a></li>
+          <li><a href="https://www.go-jek.com/go-food/">GO-FOOD</a></li>
+          <li><a href="https://www.go-jek.com/go-mart/">GO-MART</a></li>
+          <li><a href="https://www.go-jek.com/go-send/">GO-SEND</a></li>
+          <li><a href="https://www.go-jek.com/go-box/">GO-BOX</a></li>
+          <li><a href="https://www.go-jek.com/go-tix/">GO-TIX</a></li>
+          <li><a href="https://www.go-jek.com/go-med/">GO-MED</a></li>
+        </ul>
+
+        <span class="service_group" data-group="GO-PAY">GO-PAY <i id="arrow-group" class="fa fa-chevron-right" data-group="GO-PAY"></i></span>
+        <ul class="service_name" data-services="GO-PAY">
+          <li><a href="https://www.go-jek.com/go-pay/">GO-PAY</a></li>
+          <li><a href="https://www.go-jek.com/go-points/">GO-POINT</a></li>
+          <li><a href="https://www.go-jek.com/go-pulsa/">GO-PULSA</a></li>
+        </ul>
+
+        <span class="service_group" data-group="GO-LIFE">GO-LIFE <i id="arrow-group" class="fa fa-chevron-right" data-group="GO-LIFE"></i></span>
+        <ul class="service_name" data-services="GO-LIFE">
+          <li><a href="https://www.go-jek.com/go-massage/">GO-MASSAGE</a></li>
+          <li><a href="https://www.go-jek.com/go-clean/">GO-CLEAN</a></li>
+          <li><a href="https://www.go-jek.com/go-auto/">GO-AUTO</a></li>
+          <li><a href="https://www.go-jek.com/go-glam/">GO-GLAM</a></li>
+        </ul>
+      </div>
+      <div class="hamburger accordion gabung active" id="sub-gabung-menu">
+        <span class="service_group back-menu"><i class="fa fa-chevron-left"></i> Kembali</span>
+
+        <span class="service_group" data-group="Driver">Driver <i id="arrow-group" class="fa fa-chevron-right" data-group="Driver"></i></span>
+        <ul class="service_name" data-services="Driver">
+          <li><a href="https://join.go-jek.com/go-ride">GO-RIDE</a></li>
+          <li><a href="https://join.go-jek.com/go-car">GO-CAR</a></li>
+          <li><a href="https://join.go-jek.com/go-send">GO-SEND</a></li>
+          <li><a href="https://join.go-jek.com/go-box">GO-BOX</a></li>
+        </ul>
+
+        <span class="service_group" data-group="Bisnis">Bisnis <i id="arrow-group" class="fa fa-chevron-right" data-group="Bisnis"></i></span>
+        <ul class="service_name" data-services="Bisnis">
+          <li><a href="https://join.go-jek.com/go-food">GO-FOOD</a></li>
+          <li><a href="https://join.go-jek.com/go-mart">GO-MART</a></li>
+          <li><a href="/go-send/join/merchant" style="line-height: 25px;">GO-SEND</a></li>
+          <li><a href="https://join.go-jek.com/go-box/pro/event" style="line-height: 25px;">GO-BOX Pro Event</a></li>
+          <li><a href="https://join.go-jek.com/go-box/pro/business" style="line-height: 25px;">GO-BOX Pro Business</a></li>
+          <li><a href="https://join.go-jek.com/go-tix">GO-TIX</a></li>
+          <li><a href="/go-med/join" style="line-height: 25px;">GO-MED</a></li>
+          <li><a href="https://join.go-jek.com/go-points" style="line-height: 25px;">GO-POINTS</a></li>
+          <li><a href="/go-massage/business" style="line-height: 25px;">GO-MASSAGE</a></li>
+        </ul>
+
+        <span class="service_group" data-group="Talent">Talent <i id="arrow-group" class="fa fa-chevron-right" data-group="Talent"></i></span>
+        <ul class="service_name" data-services="Talent">
+          <li><a href="https://join.go-jek.com/go-massage">GO-MASSAGE</a></li>
+          <li><a href="https://join.go-jek.com/go-clean">GO-CLEAN</a></li>
+          <li><a href="/go-auto/join">GO-AUTO</a></li>
+          <li><a href="https://join.go-jek.com/go-glam">GO-GLAM</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Megamenu Product - START -->
+<div class="megamenu product">
+    <div class="container">
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <a href="javascript:void(0)" class="toggleClose">
+                    <img src="data:image/png;base64,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"
+                    width="40" height="40">
+                </a>
+                <div class="gojek-section">
+                    <div class="pure-u-1-1">
+                        <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon/gojek.png">
+                    </div>
+                    <div class="pure-u-1-1 product-wrapper service">
+                        <a href="https://www.go-jek.com/go-ride/" class="pure-u-3-24 list more--wrapper" data-services="GO-RIDE">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/go-ride.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-car/" class="pure-u-3-24 list more--wrapper" data-services="GO-CAR">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-CAR_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-food/" class="pure-u-3-24 list more--wrapper" data-services="GO-FOOD">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/go-food.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-mart/" class="pure-u-3-24 list more--wrapper" data-services="GO-MART">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/go-mart.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-send/" class="pure-u-3-24 list more--wrapper" data-services="GO-SEND">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-SEND_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-box/" class="pure-u-3-24 list more--wrapper" data-services="GO-BOX">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-BOX_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-tix/" class="pure-u-3-24 list more--wrapper" data-services="GO-TIX">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-TIX_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-med/" class="pure-u-3-24 list more--wrapper" data-services="GO-MED">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-MED_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="gopay-section">
+                    <div class="pure-u-1-1">
+                        <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon/GO-PAY_Desktop_fkkwMVo.svg">
+                    </div>
+                    <div class="pure-u-1-1 product-wrapper service">
+                        <a href="https://www.go-jek.com/go-pay/" class="pure-u-3-24 list more--wrapper" data-services="GO-PAY">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-PAY_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-points/" class="pure-u-3-24 list more--wrapper" data-services="GO-POINT">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-POINTS_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-pulsa/" class="pure-u-3-24 list more--wrapper" data-services="GO-PULSA">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-PULSA_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="golife-section">
+                    <div class="pure-u-1-1">
+                        <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon/GO-LIFE_Desktop_OFbm9m6.svg">
+                    </div>
+                    <div class="pure-u-1-1 product-wrapper service">
+                        <a href="https://www.go-jek.com/go-massage/" class="pure-u-3-24 list more--wrapper" data-services="GO-MASSAGE">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-MASSAGE_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-clean/" class="pure-u-3-24 list more--wrapper" data-services="GO-CLEAN">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-CLEAN_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-auto/" class="pure-u-3-24 list more--wrapper" data-services="GO-AUTO">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-AUTO_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                        <a href="https://www.go-jek.com/go-glam/" class="pure-u-3-24 list more--wrapper" data-services="GO-GLAM">
+                            <img class="lazyLoad" src="//d3tvjymxaoat45.cloudfront.net/service_icon_text/GO-GLAM_Desktop.svg">
+                            <div class="more"><span>SELANJUTNYA</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Megamenu Product - END -->
+<!-- Megamenu Join - START -->
+<div class="megamenu join">
+  <div class="container">
+      <div class="pure-g">
+          <div class="pure-u-1-1">
+              <a href="javascript:void(0)" class="toggleClose">
+                  <img src="data:image/png;base64,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"
+                  width="40" height="40">
+              </a>
+              <div class="gojek-section">
+                  <div class="pure-u-6-24">
+                      <h3 class="title">Bergabunglah bersama Kami.</h3>
+                      <p>Bergabung bersama <span class="inline">GO-JEK</span> sekarang dan rasakan manfaat sosial bagi Anda dan sekitar.</p>
+                  </div>
+                  <div class="pure-u-17-24 product-wrapper join">
+                      <div class="pure-u-7-24 list-services-type">
+                        <h4 class="service-type">Driver</h4>
+                        <p class="service-type-desc">Bergabunglah menjadi driver GO-JEK dan dapatkan jam kerja fleksibel dan pendapatan yang dapat Anda atur sendiri.</p>
+
+                        <div class="join-list--wrapper">
+                            <a href="https://join.go-jek.com/go-ride" class="pure-u-7-24 list more--wrapper" data-services="GO-RIDE">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-ride-icon.svg">
+                                        <div class="title-mega">GO-RIDE</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-RIDE"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-car" class="pure-u-7-24 list more--wrapper" data-services="GO-CAR">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-car.svg">
+                                        <div class="title-mega">GO-CAR</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-CAR"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-send" class="pure-u-7-24 list more--wrapper" data-services="GO-SEND">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-send.svg">
+                                        <div class="title-mega">GO-SEND</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-SEND"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-box" class="pure-u-7-24 list more--wrapper" data-services="GO-BOX">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-box.svg?v=2">
+                                        <div class="title-mega">GO-BOX</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-BOX"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-7-24 list-services-type">
+                        <h4 class="service-type">Bisnis</h4>
+                        <p class="service-type-desc">Daftarkan bisnis Anda di GO-JEK dan kenalkan bisnis Anda kepada jutaan pengguna kami.</p>
+
+                        <div class="join-list--wrapper">
+                            <a href="https://join.go-jek.com/go-food" class="pure-u-7-24 list more--wrapper" data-services="GO-FOOD">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-food.svg">
+                                        <div class="title-mega">GO-FOOD</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-FOOD"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-mart" class="pure-u-7-24 list more--wrapper" data-services="GO-MART">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-mart.svg">
+                                        <div class="title-mega">GO-MART</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-MART"></div>
+                            </a>
+                            <a href="https://www.go-jek.com/go-send/join/merchant/" class="pure-u-7-24 list more--wrapper" data-services="GO-SEND">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-send.svg">
+                                        <div class="title-mega">GO-SEND</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-SEND"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-box/pro/business" class="pure-u-7-24 list more--wrapper" data-services="GO-BOX">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-box.svg?v=2">
+                                        <div class="title-mega">GO-BOX</div>
+                                        <div class="extra">For Business</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-BOX"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-box/pro/event" class="pure-u-7-24 list more--wrapper" data-services="GO-BOX">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-box.svg?v=2">
+                                        <div class="title-mega">GO-BOX</div>
+                                        <div class="extra">For Event</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-BOX"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-tix" class="pure-u-7-24 list more--wrapper" data-services="GO-TIX">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-tix.svg">
+                                        <div class="title-mega">GO-TIX</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-TIX"></div>
+                            </a>
+                            <a href="https://www.go-jek.com/go-med/join" class="pure-u-7-24 list more--wrapper" data-services="GO-MED">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-med.svg">
+                                        <div class="title-mega">GO-MED</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-MED"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-points" class="pure-u-7-24 list more--wrapper" data-services="GO-POINT">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-points.svg">
+                                        <div class="title-mega">GO-POINTS</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-POINT"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-massage/business" class="pure-u-7-24 list more--wrapper" data-services="GO-MASSAGE">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-massage.svg">
+                                        <div class="title-mega">GO-MASSAGE</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-MASSAGE"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-7-24 list-services-type">
+                        <h4 class="service-type">Talent</h4>
+                        <p class="service-type-desc">Bergabunglah menjadi Mitra GO-JEK dan jadikan kesempatan ini untuk meningkatkan kemampuan dan pencapaian Anda.</p>
+
+                        <div class="join-list--wrapper">
+                            <a href="https://join.go-jek.com/go-massage" class="pure-u-7-24 list more--wrapper" data-services="GO-MASSAGE">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-massage.svg">
+                                        <div class="title-mega">GO-MASSAGE</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-MASSAGE"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-clean" class="pure-u-7-24 list more--wrapper" data-services="GO-CLEAN">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-clean.svg">
+                                        <div class="title-mega">GO-CLEAN</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-CLEAN"></div>
+                            </a>
+                            <a href="https://join.go-jek.com/go-glam" class="pure-u-7-24 list more--wrapper" data-services="GO-GLAM">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-glam.svg">
+                                        <div class="title-mega">GO-GLAM</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-GLAM"></div>
+                            </a>
+                            <a href="https://www.go-jek.com/go-auto/join" class="pure-u-7-24 list more--wrapper" data-services="GO-AUTO">
+                                <div class="table-display">
+                                    <div class="mid-table">
+                                        <img src="https://lelogama.go-jek.com/service_icon/go-auto.svg">
+                                        <div class="title-mega">GO-AUTO</div>
+                                    </div>
+                                </div>
+                                <div class="more GO-AUTO"></div>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Megamenu Join - END -->
+
+</header>
+
+  <section class="banner">
+  <picture>
+    <source
+      media="(min-width: 768px)"
+      srcset="https://daftar.go-ride.co.id/assets/go_ride/go-ride-banner-desktop-c100fb67ebeefde21433e4c9360d9c9696794e623f98c176100873ed0ca82973.jpg">
+    <img
+      src="https://daftar.go-ride.co.id/assets/go_ride/go-ride-banner-mobile@2x-a97ac5d120bbe75317ddb7f370bbdb4c61f9acc9f16ba95bc0a9e58d084112ae.jpg"
+      alt="Go ride banner">
+  </picture>
+</section>
+
+  <section class="content-section reg-page-content">
+    <div class="login-registration-links">
+  <ul>
+    <li id="registration-tab">
+      <a class="active" href="/">
+        <span>DAFTAR</span>
+</a>    </li>
+    <li id="login-tab">
+      <a class="" href="/supply/app/goride/v1/login/new">
+        <span>MASUK</span>
+</a>    </li>
+  </ul>
+</div>
+    <div class="wrapper-container reg-form-wrapper">
+      <i class="branding-image"></i>
+      <div class="main-form registration-form">
+        <div class="form-legend">
+          <h2>BERGABUNG DENGAN KAMI SEKARANG!</h2>
+            <a href="javascript:;" data-toggle="modal" data-target="#helpVideoModal" class="reg-guidance-text">Panduan Pendaftaran</a>
+        </div>
+        <form novalidate="novalidate" data-toggle="validator" id="register-goride-form" class="new_lead" action="/supply/app/goride/v1/leads" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="d2KILM5+SDvKffzC92dIlcboUshqAYcHgWyPjY9t8AG7zzcyKg2mKhsHbRz3IY1yDjrgBa6i96JMKNAubilYNg==" />
+          html: {id: 'create-attempt-form'}
+          <div class="form-group form-horizontal">
+  <label for="lead_first_name">Nama depan*</label>
+  <input placeholder="Nama depan*" class="form-control input-lg" data-error="Nama depan dibutuhkan" maxlength="20" pattern="[a-zA-ZÀ-ỹ ]+" required="required" size="20" type="text" name="lead[first_name]" id="lead_first_name" />
+  <div class="help-block with-errors server-side-error name-field-errors"></div>
+</div>
+<div class="form-group form-horizontal">
+  <label for="lead_last_name">Nama belakang*</label>
+  <input placeholder="Nama belakang*" class="form-control input-lg" data-error="Nama belakang dibutuhkan" maxlength="20" pattern="[a-zA-ZÀ-ỹ ]+" required="required" size="20" type="text" name="lead[last_name]" id="lead_last_name" />
+  <div class="help-block with-errors server-side-error name-field-errors"></div>
+</div>
+<div class="form-group form-horizontal">
+  <label for="lead_email">Alamat e-mail Gmail*</label>
+  <input placeholder="Contoh: xxxxx@gmail.com" class="form-control" data-error="Silakan masukkan akun Gmail, contoh: xxxx@gmail.com" pattern="^[a-zA-Z0-9](\.?[a-zA-Z0-9]){5,}@gmail\.com" required="required" type="text" name="lead[email]" id="lead_email" />
+  <div class="help-block with-errors server-side-error"></div>
+</div>
+<div class="form-group form-horizontal">
+  <label for="lead_contact_no">Nomor HP Utama*</label>
+  <div class="input-group">
+    <span class="input-group-addon country-code">+62</span>
+    <input placeholder="Contoh: 812xxxxx" class="form-control" data-error="Silakan masukkan 9-13 digit nomor HP tanpa kode area, angka 0 di depan, spasi, atau karakter khusus" pattern="^[1-9][0-9]{8,12}" maxlength="13" required="required" size="13" type="tel" name="lead[contact_no]" id="lead_contact_no" />
+  </div>
+  <div class="help-block with-errors server-side-error">
+  </div>
+</div>
+
+
+
+<div class="form-group form-horizontal full-width">
+  <label for="lead_city">Pilih kota*</label>
+  <div class="selectbox-wrap">
+    <select class="form-control input-lg lead-submitted" data-error="Silakan pilih Kota" required="required" name="lead[city]" id="lead_city"><option value="">Pilih kota*</option>
+<option value="1">JABODETABEK</option>
+<option value="2">BANDUNG</option>
+<option value="3">BALI</option>
+<option value="4">SURABAYA</option>
+<option value="5">MAKASSAR</option>
+<option value="6">PALEMBANG</option>
+<option value="7">MEDAN</option>
+<option value="8">BALIKPAPAN</option>
+<option value="9">YOGYAKARTA</option>
+<option value="10">SEMARANG</option>
+<option value="11">MANADO</option>
+<option value="12">SOLO</option>
+<option value="13">SAMARINDA</option>
+<option value="14">MALANG</option>
+<option value="15">BATAM</option>
+<option value="16">SIDOARJO</option>
+<option value="17">PADANG</option>
+<option value="18">PONTIANAK</option>
+<option value="19">BANJARMASIN</option>
+<option value="20">PEKANBARU</option>
+<option value="21">JAMBI</option>
+<option value="22">BANDAR LAMPUNG</option>
+<option value="23">GRESIK</option>
+<option value="24">MATARAM</option>
+<option value="25">SUKABUMI</option>
+<option value="26">PEMATANGSIANTAR</option>
+<option value="27">TASIKMALAYA</option>
+<option value="28">SERANG</option>
+<option value="29">CIREBON</option>
+<option value="30">TEGAL</option>
+<option value="31">SALATIGA</option>
+<option value="32">MAGELANG</option>
+<option value="33">PURWOKERTO</option>
+<option value="34">KEDIRI</option>
+<option value="35">MADIUN</option>
+<option value="36">KARAWANG</option>
+<option value="37">JEMBER</option>
+<option value="38">PASURUAN</option>
+<option value="39">MOJOKERTO</option>
+<option value="40">BANDA ACEH</option>
+<option value="41">PEKALONGAN</option>
+<option value="42">BUKIT TINGGI</option>
+<option value="43">CILACAP</option>
+<option value="44">SUMEDANG</option>
+<option value="45">GARUT</option>
+<option value="46">BELITUNG</option>
+<option value="47">MADURA</option>
+<option value="48">PROBOLINGGO</option>
+<option value="49">PURWAKARTA</option>
+<option value="50">BANYUWANGI</option>
+<option value="51">SUBANG</option>
+<option value="52">PADANGSIDEMPUAN</option>
+<option value="53">METRO</option>
+<option value="54">PANGKAL PINANG</option>
+<option value="55">TANJUNG PINANG</option>
+<option value="56">DURI</option>
+<option value="57">SABANG</option>
+<option value="58">KUDUS</option>
+<option value="59">KEBUMEN</option>
+<option value="60">UNGARAN</option>
+<option value="61">TOMOHON</option>
+<option value="62">BITUNG</option>
+<option value="63">GORONTALO</option>
+<option value="64">PALU</option>
+<option value="65">GIANYAR</option>
+<option value="66">TABANAN</option>
+<option value="67">JOMBANG</option>
+<option value="68">MERAUKE</option>
+<option value="69">KENDARI</option>
+<option value="70">PALOPO</option></select>
+  </div>
+  <div class="help-block with-errors server-side-error"></div>
+</div>
+
+<div class="form-group form-horizontal full-width">
+  <div class="checkbox">
+    <input type="checkbox" value="0" name="lead[terms_of_service]" id="lead_terms_of_service" data-error="Untuk dapat melanjutkan, Anda harus menyetujui Syarat dan Ketentuan Layanan" required>
+    <label for="lead_terms_of_service">
+      Saya setuju dengan
+      <a target="_blank" href="/supply/app/goride/v1/terms_of_services">Syarat dan Ketentuan</a>
+    </label>
+    <div class="help-block with-errors server-side-error">
+      
+    </div>
+  </div>
+</div>
+
+
+          <div class="form-group btn-wrap">
+            <input type="submit" name="commit" value="DAFTAR" id="registerGoRideFormSubmit" class="btn-default btn-primary" />
+          </div>
+</form>      </div>
+
+    </div>
+  </section>
+
+  <div class="blog-wrap">
+  <div class="container blog-container">
+    <div class="blog">
+      <h2>GO-RIDE – Cepat, Fleksibel, Mudah</h2>
+      <article class="blog-post">
+        <figure class="rect-secondary">
+          <img class="lazyLoad" data-src="https://daftar.go-ride.co.id/assets/go_ride/goride_article_1-f8cb34710eb8dadd0c9be8c8e5cfa291c7b27938d413cdf4005e27aa3bf34ec9.jpg" alt="Bergabunglah Dengan Gerakan Karya Anak Bangsa" />
+        </figure>
+        <div class="blog-post-content">
+          <h1>Bergabunglah Dengan Gerakan Karya Anak Bangsa</h1>
+          <p>Jadilah bagian dari revolusi Karya Anak Bangsa, dengan menjadi mitra dalam salah satu era perubahan yang paling membanggakan untuk mencapai Indonesia yang lebih baik.</p>
+        </div>
+      </article>
+      <article class="blog-post">
+        <figure class="rect-primary">
+          <img class="lazyLoad" data-src="https://daftar.go-ride.co.id/assets/go_ride/goride_article_2-a4c562cedf10650eb9d635a6ed0c2d8155921a65a5cfd760ffb4bc105a0da5b4.jpg" alt="Bebas Mengatur Waktu dan Tingkat Pendapatan" />
+        </figure>
+        <div class="blog-post-content">
+          <h1>Bebas Mengatur Waktu dan Tingkat Pendapatan</h1>
+          <p>Waktu kerja yang fleksibel memberikan Anda kebebasan untuk menentukan jam kerja, sesuai dengan keinginan Anda. Dapatkan penghasilan hingga jutaan rupiah per bulan.</p>
+        </div>
+      </article>
+      <article class="blog-post">
+        <figure class="rect-tertiary">
+          <img class="lazyLoad" data-src="https://daftar.go-ride.co.id/assets/go_ride/goride_article_3-e067639e0cd82315a18552909a7db5562ad506d56d59c41acb459651ef900474.jpg" alt="Peluang yang lebih beragam" />
+        </figure>
+        <div class="blog-post-content">
+          <h1>Peluang yang lebih beragam</h1>
+          <p>Selain menjadi mitra GO-RIDE, Anda juga bisa memperoleh order dari berbagai jenis layanan GO-JEK sepanjang hari, antara lain GO-FOOD, GO-MART, GO-SEND.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+  <footer>
+  <div class="pure-g container footer-accordion">
+    <div id="header" style="background-image:url('https://bilba.go-jek.com/dist/img/footer/top.png');" alt="">
+		</div>
+    <div class="pure-u-1 pure-u-sm-3-24 pure-u-md-3-24 pure-u-lg-3-24 ">
+      <img class="pure-img" src="https://bilba.go-jek.com/dist/img/footer/gojek-logo.svg" alt="">
+    </div>
+    <div class="pure-u-1 pure-u-sm-4-24 pure-u-md-4-24 pure-u-lg-4-24 ">
+      <ul>
+        <li><a href="https://www.go-jek.com/about">TENTANG KAMI</a></li>
+        <li><a href="https://www.go-jek.com/blog">BLOG</a></li>
+        <li><a href="https://www.go-jek.com/faq">FAQ</a></li>
+        <li><a href="https://www.go-jek.com/career">KARIR</a></li>
+        <li><a href="https://www.go-jek.com/contact">HUBUNGI KAMI</a></li>
+      </ul>
+    </div>
+    <hr>
+
+    <div class="pure-u-1 pure-u-sm-3-24 pure-u-md-3-24 pure-u-lg-3-24 ">
+      <ul id="accordion">
+        <li class="title-content">GO-JEK</li>
+        <ul>
+          <li><a href="https://www.go-jek.com/">GO-JEK</a></li>
+          <li><a href="https://www.go-jek.com/go-ride/">GO-RIDE</a></li>
+          <li><a href="https://www.go-jek.com/go-car/">GO-CAR</a></li>
+          <li><a href="https://www.go-jek.com/go-food/">GO-FOOD</a></li>
+          <li><a href="https://www.go-jek.com/go-mart/">GO-MART</a></li>
+          <li><a href="https://www.go-jek.com/go-send/">GO-SEND</a></li>
+          <li><a href="https://www.go-jek.com/go-box/">GO-BOX</a></li>
+          <li><a href="https://www.go-jek.com/go-tix/">GO-TIX</a></li>
+          <li><a href="https://www.go-jek.com/go-med/">GO-MED</a></li>
+        </ul>
+      </ul>
+    </div>
+    <hr>
+
+    <div class="pure-u-1 pure-u-sm-3-24 pure-u-md-3-24 pure-u-lg-3-24 ">
+      <ul id="accordion">
+        <li class="title-content">GO-LIFE </li>
+        <ul>
+          <li><a href="https://www.go-jek.com/go-massage/">GO-MASSAGE</a></li>
+          <li><a href="https://www.go-jek.com/go-clean/">GO-CLEAN</a></li>
+          <li><a href="https://www.go-jek.com/go-glam/">GO-GLAM</a></li>
+          <li><a href="https://www.go-jek.com/go-auto/">GO-AUTO</a></li>
+        </ul>
+      </ul>
+    </div>
+    <hr>
+
+    <div class="pure-u-1 pure-u-sm-3-24 pure-u-md-3-24 pure-u-lg-3-24">
+      <ul id="accordion">
+        <li class="title-content">GO-PAY</li>
+        <ul>
+          <li><a href="https://www.go-jek.com/go-pay/">GO-PAY</a></li>
+          <li><a href="https://www.go-jek.com/go-points/">GO-POINTS</a></li>
+          <li><a href="https://www.go-jek.com/go-pulsa/">GO-PULSA</a></li>
+        </ul>
+      </ul>
+    </div>
+    <hr>
+
+    <div class="pure-u-1 pure-u-sm-2-24 pure-u-md-2-24 pure-u-lg-4-24 ">
+      <ul>
+        <li><a href="https://www.go-jek.com/terms-and-condition">SYARAT & KETENTUAN</a></li>
+        <li><a href="https://www.go-jek.com/privacy-policies">KEBIJAKAN PRIVASI</a></li>
+      </ul>
+    </div>
+    <hr>
+
+    <div class="pure-u-1 pure-u-sm-6-24 pure-u-md-6-24 pure-u-lg-4-24 social-media">
+      <div class="social-content">
+
+        <a href="http://facebook.com/gojekindonesia" alt="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/gojekindonesia" alt="Twitter"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram.com/gojekindonesia/" alt="Instagram"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://www.youtube.com/channel/UCmlKSK0OKn_B3oPwElW4n5w" alt="Youtube"><i class="fa fa-youtube-play fa-2x"></i></a>
+      </div>
+      <p>&copy; 2017 Aplikasi Karya Anak Bangsa</p>
+    </div>
+    <img id="brush" src="https://bilba.go-jek.com/dist/img/footer/brush.png" alt="">
+    <div class="gojek-wrapper">
+      <h2>#HidupTanpaBatas</h2>
+    </div>
+  </div>
+</footer>
+
+</div>
+<div class="modal custom-modal photo-modal help-video-modal fade" id="helpVideoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body" id="player-div">
+        <a href="javascipt:;" class="close" data-dismiss="modal" aria-label="Close" id = "close-help-video-modal"></a>
+        <h3 class="modal-title text-center">Lihat Panduan</h3>
+        <div class="modal-video">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" id="help-video-player" src="//www.youtube.com/embed/Wr1qGQKgxAc?enablejsapi=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://daftar.go-ride.co.id/assets/application-fc3e548acab7c408638024e8325593c5573fe3e0ac62d7d6e8afcc315a3dffd2.js" data-turbolinks-track="true" data-turbolinks-eval="false"></script>
+
+</body>
+</html>
