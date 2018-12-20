@@ -26,7 +26,13 @@ var readURL = (event, elementNya, classnya) => {
         $(classnya + '-text').text('');
     }
     setTimeout((e) => {
+        // console.log(event.target.files);
         $(classnya).slideUp('slow');
-        $(classnya + '-text').text('Sudah input Photo');
+        var files = event.target.files;
+        if (files.length > 0) {
+            $(classnya + '-text').text('Sudah input Photo');
+        }else{
+            $(classnya + '-text').text('');
+        }
     }, 10000)
 }

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Masih Berkembang">
+    <meta name="author" content="Khoirl Anam">
     <!-- <link rel="icon" href="../../../../favicon.ico"> -->
     <title>Desain</title>
     <!-- Latest compiled and minified CSS -->
@@ -13,12 +13,17 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Style -->
     <link rel="stylesheet" href="assets/custom_css/style.css">
+    <!-- BV -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/> -->
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- BV -->
+    <script src="./assets/bs4-validate/js/bootstrap-validate.js"></script>
+    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script> -->
     <!-- Custom styles for this template -->
     <!-- <link href="./assets/custom_css/cover.css" rel="stylesheet"> -->
   </head>
@@ -65,24 +70,25 @@
       <section id="daftar_ride" style="background-color: #f8f8f8">
         <br>
         <div class="text-center">
-          <button class="btn btn-default btn-lg" style="width: 150px;height: 70px;font-size: 30px;background-color: #fff;color: #000" data-toggle="collapse" data-target="#osas"><b>Daftar</b></button>
+          <button class="btn btn-default btn-lg" style="width: 200;height: 70px;font-size: 30px;background-color: #fff;color: #000" data-toggle="collapse" data-target="#osas"><b>Klik Disini</b></button>
         </div>
         <br>
         <div id="osas" class="collapse">
           <div class="card">
-            <div class="card-body">
-              <h3 class="text-center">
-              Form Pendaftaran M-Ride
-              </h3>
-              <hr>
-              <div>
-                <form>
+            <form class="form-waw">
+              <div class="card-body">
+                <h3 class="text-center">
+                Form Pendaftaran M-Ride
+                </h3>
+                <hr>
+
+                <div>
                   <div class="row">
                     <div class="col-lg-6 col-12">
                       <div class="form-group">
                         <label for="full_name"><b>Nama Lengkap <span class="merah">*</span></b></label>
                         <div>
-                          <input type="text" name="full_name" id="full_name" class="form-control" value="" placeholder="Masukan Nama Lengkap..">
+                          <input type="text" name="full_name" id="full_name" class="form-control" value="" placeholder="Masukan Nama Lengkap.." required>
                         </div>
                       </div>
                     </div>
@@ -90,7 +96,7 @@
                       <div class="form-group">
                         <label for="email"><b>Email <span class="merah">*</span></b></label>
                         <div>
-                          <input type="email" name="email" id="email" class="form-control" value="" placeholder="Masukan Email..">
+                          <input type="email" name="email" id="email" class="form-control" value="" placeholder="Masukan Email.." required>
                         </div>
                       </div>
                     </div>
@@ -100,7 +106,7 @@
                       <div class="form-group">
                         <label for="password"><b>Password <span class="merah">*</span></b></label>
                         <div>
-                          <input type="password" name="password" id="password" class="form-control" value="" placeholder="Masukan Password..">
+                          <input type="password" name="password" id="password" class="form-control" value="" placeholder="Masukan Password.." required>
                         </div>
                       </div>
                     </div>
@@ -108,7 +114,7 @@
                       <div class="form-group">
                         <label for="repassword"><b>Re Password <span class="merah">*</span></b></label>
                         <div>
-                          <input type="password" name="repassword" id="repassword" class="form-control" value="" placeholder="Masukan Re Password..">
+                          <input type="password" name="repassword" id="repassword" class="form-control" value="" placeholder="Masukan Re Password.." required>
                         </div>
                       </div>
                     </div>
@@ -121,7 +127,7 @@
                           <div class="input-group-prepend">
                             <span class="input-group-text">+62</span>
                           </div>
-                          <input type="text" id="phone" name="phone" class="form-control" placeholder="Masukan Nomor Telepon">
+                          <input type="text" id="phone" name="phone" class="form-control" placeholder="Masukan Nomor Telepon" required>
                         </div>
                       </div>
                     </div>
@@ -129,10 +135,10 @@
                       <div class="form-group">
                         <label for="photo"><b>Photo <span class="merah">*</span></b></label>
                         <div>
-                           <div class="custom-file">
-                              <input type="file" id="photo" class="custom-file-input" onchange="readURL(event, 'photoan', '.photo-muncul')" name="photo">
-                              <label class="custom-file-label">Choose file</label>
-                            </div>
+                          <div class="custom-file">
+                            <input type="file" id="photo" class="custom-file-input" onchange="readURL(event, 'photoan', '.photo-muncul')" name="photo" required>
+                            <label class="custom-file-label">Choose file</label>
+                          </div>
                         </div>
                       </div>
                       <div class="photo-muncul" style="display: none;">
@@ -146,7 +152,7 @@
                       <div class="form-group">
                         <label for="gender"><b>Jenis Kelamin <span class="merah">*</span></b></label>
                         <div>
-                          <select name="gender" id="gender" class="form-control">
+                          <select name="gender" id="gender" class="form-control" required>
                             <option value="">Pilih Jenis Kelamin</option>
                             <option value="L">Laki-Laki</option>
                             <option value="P">Perempuan</option>
@@ -157,15 +163,85 @@
                     </div>
                     <div class="col-lg-6 col-12"></div>
                   </div>
-                </form>
+                </div>
+                <hr>
+                <h3 class="text-center">Form Kendaraan</h3>
+                <hr>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="license_plat"><b>Plat Nomor <span class="merah">*</span></b></label>
+                        <div>
+                          <input type="text" name="license_plat" id="license_plat" class="form-control" value="" placeholder="Masukan Plat Nomor.." required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="vehicle_brand"><b>Merk Kendaraan <span class="merah">*</span></b></label>
+                        <div>
+                          <input type="text" name="vehicle_brand" id="vehicle_brand" class="form-control" value="" placeholder="Masukan Merk Kendaraan.." required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="vehicle_type"><b>Tipe Kendaraan <span class="merah">*</span></b></label>
+                        <div>
+                          <input type="text" name="vehicle_type" id="vehicle_type" class="form-control" value="" placeholder="Masukan Tipe Kendaraan.." required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="vehicle_color"><b>Warna Kendaraan <span class="merah">*</span></b></label>
+                        <div>
+                          <input type="text" name="vehicle_color" id="vehicle_color" class="form-control" value="" placeholder="Masukan Warna Kendaraan.." required>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label for="sim"><b>SIM <span class="merah">*</span></b></label>
+                        <div>
+                          <div class="custom-file">
+                            <input type="file" id="sim" class="custom-file-input" onchange="readURL(event, 'siman', '.sim-muncul')" name="sim" required>
+                            <label class="custom-file-label">Choose file</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="sim-muncul" style="display: none;">
+                        <img id="siman" width="100%" height="400px" />
+                      </div>
+                      <div class="sim-muncul-text"></div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div>
+                  <div class="row">
+                    <div class="col-lg-12 col-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck" name="wajibwe" required>
+                        <label class="custom-control-label" for="customCheck">Saya setuju dengan <a href="" target="_blank">Syarat dan Ketentuan</a></label>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-lg-9 d-none d-sm-block"></div>
+                    <div class="col-lg-3 col-12">
+                      <button type="submit" class="btn btn-primary btn-lg btn-block">Daftar</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <hr>
-              <h3 class="text-center">Form Kendaraan</h3>
-              <hr>
-              <div>
-                
-              </div>
-            </div>
+            </form>
           </div>
         </div>
         <br>
@@ -190,5 +266,6 @@
       <p>COPYRIGHT © 2018 PT. MOVE INOVASI BANGSA – ALL RIGHTS RESERVED</p>
     </footer>
     <script src="./assets/custom_js/apawe.js"></script>
+    <script src="./assets/custom_js/login-custom.js"></script>
   </body>
 </html>
