@@ -22,6 +22,14 @@ class Awal extends CI_Controller
         $this->liblat->page('vData', $data);
     }
 
+    public function datanya2()
+    {
+        $data = array(
+            'judul' => 'Contoh Tabel JS Dengan Rowspan',
+        );
+        $this->liblat->page('vData2', $data);
+    }
+
     public function listData()
     {
         $q    = $this->mod_user->datanya(5);
@@ -29,12 +37,12 @@ class Awal extends CI_Controller
         if ($q->num_rows() == true) {
             $status = 'ada';
             foreach ($q->result() as $key) {
-            	$r = array();
-            	$r['nama'] = ucwords($key->nama);
-            	$r['email'] = $key->email;
-            	$r['type_name'] = $key->type_name;
-            	$r['gender'] = $this->liblat->jk($key->gender);
-            	$json[] = $r;
+                $r              = array();
+                $r['nama']      = ucwords($key->nama);
+                $r['email']     = $key->email;
+                $r['type_name'] = $key->type_name;
+                $r['gender']    = $this->liblat->jk($key->gender);
+                $json[]         = $r;
             }
         } else {
             $status = 'tidak_ada';
@@ -47,7 +55,42 @@ class Awal extends CI_Controller
             'jumlah_total' => $this->mod_user->datanya()->num_rows(),
         ));
     }
-}
+
+    public function listDat2()
+    {
+        $q = $this->mod_user->datanya2(array('tahun', 'bulan'));
+            $json = array();
+            if ($q->num_rows() == true) {
+                $status = 'ada';
+                foreach ($q->result() as $key) {
+                    $r          = array();
+                    $r['tahun'] = $key->tahun;
+                    $r['bulan'] = $key->bulan;
+                    $q2         = $this->mod_user->datanya3(array(
+                        'tahun' => $r['tahun'],
+                        'bulan' => $r['bulan'],
+                    ));
+                    $json2 = array();
+                    foreach ($q2->result() as $key2) {
+                        $r2             = array();
+                        $r2['nama']      = ucwords($key2->nama);
+                        $r2['email']     = $key2->email;
+                        $r2['type_name'] = $key2->type_name;
+                        $r2['gender']    = $this->liblat->jk($key2->gender);
+                        $json2[] = $r2;
+                    }
+                    $r['detail'] = $json2;
+                    $json[] = $r;
+                }
+            } else {
+                $status = 'tidak_ada';
+            }
+            $this->liblat->to_json(array(
+                'status' => $status,
+                'data'   => $json,
+            ));
+        }
+    }
 
 /* End of file Awal.php */
 /* Location: ./application/controllers/Awal.php */
