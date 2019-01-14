@@ -71,7 +71,7 @@ $(() => {
         fw[0].reset();
         sTambah.show();
         sEdit.hide();
-        $('.p-password').text('Jika password tidak dirubah maka kosongkan');
+        $('.p-password').text('');
         $('.re-hilang').show();
     });
     btn_batal.on('click', (e) => {
