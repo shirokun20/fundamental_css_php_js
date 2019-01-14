@@ -133,5 +133,6 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array(
-	'custom/mod_user' => 'mod_user'
+	'custom/mod_user' => 'mod_user',
+	'mod_semua_bisa' => 'mod_sb',
 );

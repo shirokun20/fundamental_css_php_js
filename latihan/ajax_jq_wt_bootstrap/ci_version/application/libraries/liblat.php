@@ -38,4 +38,36 @@ class Liblat
     			break;
     	}
     }
+
+    public function TanggalIndo($date)
+    {
+        if ($date == null) {
+            $date = date('Y-m-d');
+        }
+        $BulanIndo = array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+
+        $tahun = substr($date, 0, 4);
+        $bulan = substr($date, 5, 2);
+        $tgl   = substr($date, 8, 2);
+
+        $result = $tgl . " " . $BulanIndo[(int) $bulan - 1] . " " . $tahun;
+        return ($result);
+    }
+
+    public function validatorInputNull($apawe = null, $pesan = null)
+    {
+        $value = $this->ci->input->get_post($apawe, true);
+        if ($value == null) {
+            return array(
+                'status'=>'gagal',
+                'pesan' => $pesan,
+                $apawe => $value,
+            );
+        }else{
+            return array(
+                'status'=>'berhasil',
+                $apawe => $value,
+            );
+        }
+    }
 }

@@ -9,6 +9,26 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
+		<header>
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand" href="<?=site_url()?>">CI Tutorial</a>
+			    </div>
+			    <ul class="nav navbar-nav">
+			      <li class="dropdown active">
+			        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tabel
+			        <span class="caret"></span></a>
+			        <ul class="dropdown-menu">
+			          <li class="active"><a href="<?=site_url('awal/datanya/')?>">Tabel Tp</a></li>
+			          <li><a href="<?=site_url('awal/datanya2/')?>">Tabel rowspan Tp</a></li>
+			        </ul>
+			      </li>
+			      <li><a href="<?=site_url('crud/')?>">Crud</a></li>
+			    </ul>
+			  </div>
+			</nav>
+		</header>
 		<div class="container">
 			<h3 class="text-center"><?=$judul?></h3>
 			<div class="row">
@@ -33,7 +53,8 @@
 				</div>
 				<div class="col-xs-12">
 					<div class="panel panel-default">
-						<div class="panel-heading">List Data</div>
+						<div class="panel-heading">List Data
+						</div>
 						<div class="panel-body">
 							<div class="table-responsive">
 								<table class="table" cellspacing="0" style="width:100%">
