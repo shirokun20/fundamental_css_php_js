@@ -1,15 +1,22 @@
-var express = require('express'),
-	app = express(),
-	port = process.env.PORT || 3000,
-	bodyParser = require('body-parser'),
-	controller = require('./controller');
-
-	app.use(bodyParser.urlencoded({ extended: true }));
-	app.use(bodyParser.json());
-
-	var routes = require('./routes');
-	routes(app);
-
-	app.listen(port);
-
-	console.log(`Berjalan di port: ${ port }`);
+// Epressnya
+var express = require('express');
+// Dibuka dalamnya
+var app = express();
+// Port
+var port = process.env.PORT || 3000;
+// Body Parser
+var bodyParser = require('body-parser');
+// Controller.js
+var controller = require('./controller');
+// menerima urlencoded
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+// dipakai
+app.use(bodyParser.json());
+//routenya
+var routes = require('./routes');
+routes(app);
+// output nya we
+app.listen(port);
+console.log(`Berjalan di port: ${ port }`);
