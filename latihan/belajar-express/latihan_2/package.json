@@ -1,0 +1,21 @@
+{
+  "name": "latihan_2",
+  "version": "0.0.1",
+  "description": "ini hanya belajar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "dengan",
+    "mysql"
+  ],
+  "author": "khoirul anam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
