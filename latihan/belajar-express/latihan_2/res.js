@@ -1,16 +1,16 @@
 'use strict'
-exports.ok = (values, res) => {
+exports.ok = (hasilnya, res) => {
     var data = {
         status: 200,
-        values: values,
+        values: hasilnya,
     };
     res.json(data);
     res.end();
 }
-exports.err = (value, res) => {
+exports.err = (hasilnya, res) => {
     var data = {
         status: 404,
-        values: values,
+        values: hasilnya,
     };
     res.json(data);
     res.end();
