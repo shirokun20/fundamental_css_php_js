@@ -22,17 +22,17 @@
 					</div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 						<ul class="nav navbar-nav">
-							<li class="dropdown active">
+							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tabel
 									<span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="<?=site_url('awal/datanya/')?>">Tabel Tp</a></li>
-										<li class="active"><a href="<?=site_url('awal/datanya2/')?>">Tabel rowspan Tp</a></li>
+										<li><a href="<?=site_url('awal/datanya2/')?>">Tabel rowspan Tp</a></li>
 									</ul>
 								</li>
 								<li><a href="<?=site_url('crud/')?>">Crud</a></li>
 								<?php if (is_null($this->session->test)): ?>
-								<li><a href="<?=site_url('login/')?>">Login Ajax</a></li>
+								<li class="active"><a href="<?=site_url('login/')?>">Login Ajax</a></li>
 								<?php endif ?>
 							</ul>
 							<?php if (@$this->session->test): ?>
@@ -48,49 +48,52 @@
 			<div class="container">
 				<h3 class="text-center"><?=$judul?></h3>
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="panel panel-default">
-							<div class="panel-body">
-								<div class="row">
-									<div class="col-lg-9 col-xs-8">
-										<input type="text" name="mencari" class="form-control" placeholder="Cari disini..">
-									</div>
-									<div class="col-lg-3 col-xs-4">
-										<select name="gender" class="form-control">
-											<option value="">Pilih Jenis Kelamin</option>
-											<option value="1">Laki-laki</option>
-											<option value="2">Perempuan</option>
-											<option value="3">Lainnya</option>
-										</select>
-									</div>
+					<div class="col-lg-3"></div>
+					<div class="col-lg-6 col-xs-12">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="alert alert-danger" style="display: none;">
+									<div class="pesan"></div>
+								</div>
+								<div class="alert alert-success" style="display: none;">
+									<div class="pesan"></div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-xs-12">
 						<div class="panel panel-default">
-							<div class="panel-heading">List Data</div>
-							<div class="panel-body">
-								<div class="table-responsive">
-									<table class="table" cellspacing="0" style="width:100%">
-										<thead>
-											<tr>
-												<th width="5%">No</th>
-												<th width="30%">Nama</th>
-												<th width="25%">Email</th>
-												<th width="20%">Tipe</th>
-												<th width="10%">Kelamin</th>
-												<th width="10%">Bulan/Tahun</th>
-											</tr>
-										</thead>
-									<tbody class="datanya"></tbody>
-								</table>
-							</div>
+							<div class="panel-heading">Masuk ke aplikasi</div>
+							<form class="form-wajib">
+								<div class="panel-body">
+									<div class="form-group">
+										<label>Email</label>
+										<div>
+											<input type="email" name="email" class="form-control" placeholder="Masukan email">
+										</div>
+									</div>
+									<div class="form-group">
+										<label>Password</label>
+										<div>
+											<input type="password" name="password" class="form-control" placeholder="Masukan password">
+										</div>
+									</div>
+								</div>
+								<div class="panel-footer">
+									<div class="">
+										<div class="row">
+											<div class="col-lg-9 col-xs-6" style="font-size: 15px;margin-top: 7px;">
+												Copyright &copy; 2018-2020. <a href="javascript:void(0)">Shiro IT</a>.
+											</div>
+											<div class="col-lg-3 col-xs-6">
+												<button class="btn btn-success btn-block">Masuk</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
 						</div>
 					</div>
+					<div class="col-lg-3"></div>
 				</div>
 			</div>
-		</div>
-		<script src="<?=base_url('assets/custom_js/datanya2.js')?>"></script>
-	</body>
-</html>
+		</body>
+	</html>
