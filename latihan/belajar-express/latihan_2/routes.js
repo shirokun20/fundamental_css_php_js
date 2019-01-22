@@ -1,8 +1,10 @@
 'use strict'
 module.exports = (app) => {
-    var todoList = require('./controller');
-    app.route('/').get(todoList.index);
-    app.route('/api/users').get(todoList.users);
-    app.route('/api/users/:user_id').get(todoList.findUsers);
-    app.route('/api/users/').post(todoList.createUser);
+    var controllerNya = require('./controller');
+    app.route('/').get(controllerNya.index);
+    app.route('/api/users').get(controllerNya.users);
+    app.route('/api/users/:user_id').get(controllerNya.findUsers);
+    app.route('/api/users/').post(controllerNya.createUser);
+    app.route('/api/users/:user_id').put(controllerNya.updateUser);
+    app.route('/api/users/:user_id').delete(controllerNya.deleteUser);
 }

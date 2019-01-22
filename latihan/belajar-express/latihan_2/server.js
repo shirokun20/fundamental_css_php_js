@@ -6,14 +6,16 @@ var app = express();
 var port = process.env.PORT || 3000;
 // Body Parser
 var bodyParser = require('body-parser');
-// Controller.js
-var controller = require('./controller');
+// Cors
+var cors = require('cors');
 // menerima urlencoded
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 // dipakai
 app.use(bodyParser.json());
+// Corsnya
+app.use(cors());
 //routenya
 var routes = require('./routes');
 routes(app);
