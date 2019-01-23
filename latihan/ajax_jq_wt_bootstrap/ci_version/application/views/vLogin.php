@@ -84,7 +84,7 @@
 												Copyright &copy; 2018-2020. <a href="javascript:void(0)">Shiro IT</a>.
 											</div>
 											<div class="col-lg-3 col-xs-6">
-												<button class="btn btn-success btn-block">Masuk</button>
+												<button class="btn btn-success btn-block btn-masuk">Masuk</button>
 											</div>
 										</div>
 									</div>
@@ -95,5 +95,7 @@
 					<div class="col-lg-3"></div>
 				</div>
 			</div>
+			<script src="<?=base_url('assets/custom_js/login_class.js')?>"></script>
+			<script src="<?=base_url('assets/custom_js/login.js')?>"></script>
 		</body>
 	</html>
