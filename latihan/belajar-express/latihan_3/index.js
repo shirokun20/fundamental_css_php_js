@@ -15,10 +15,12 @@ app.use(bodyParser.urlencoded({
 // dipakai
 app.use(bodyParser.json());
 // Corsnya
-app.use(cors());
+app.use(cors());// haha
 //routenya
+app.use(express.static('public'));
+
 var routes = require('./routes');
-routes(app);
+routes(app); 
 // output nya we
 app.listen(port);
 console.log(`Berjalan di port: ${ port }`);
