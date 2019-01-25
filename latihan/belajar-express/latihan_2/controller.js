@@ -26,19 +26,6 @@ exports.findUsers = (req, res) => {
         }
     });
 }
-exports.findUsers = (req, res) => {
-    qb.where({
-        id: req.params.user_id
-    }).get('person', (err, output) => {
-        if (err) {
-            response.err({
-                message: err
-            }, res);
-        } else {
-            response.ok(output, res);
-        }
-    });
-}
 exports.updateUser = (req, res) => {
 	const {error} = validasi(req.body);
     if (error) return response.err({
